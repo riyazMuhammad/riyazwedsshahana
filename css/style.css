@@ -103,6 +103,67 @@ a.more{
 .no-touch .back:hover {
     color:#FFFFFF;
 }
+.wedding_container,.reception_container {
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+    height: 600px;
+}
+.wedding_color{
+    background-color: #b5af47;
+}
+.reception_color{
+    background-color: #f6f5ec;
+}
+.wedding_container .header-text{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 40px 0 0 0;
+    margin: 0 0 10px 0;
+    color: white;
+}
+.reception_container .header-text{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 40px 0 0 0;
+    margin: 0 0 10px 0;
+    color: #5d594d;
+}
+.wedding_container .header-content .address{
+    display:block;
+    width:100%;
+    text-align:center;
+    font-size:17px;
+    font-weight:700;
+    letter-spacing:-1px;
+    padding:0 0 40px 0;
+    color: #5d594d;
+}
+.reception_container .header-content .address{
+    display:block;
+    width:100%;
+    text-align:center;
+    font-size:17px;
+    font-weight:700;
+    letter-spacing:-1px;
+    padding:0 0 40px 0;
+    color: #b5af47;
+}
+.wedding_container .slide1, .reception_container .slide1{
+    position: relative;
+    top: 80px;
+}
+.wedding_container .slide2{
+    position: relative;
+    top: -450px;
+    visibility: hidden;
+}
+.reception_container .slide2{
+    position: relative;
+    top: -430px;
+    visibility: hidden;
+}
 /*---------------------------*/
 /* 2-1. HEADINGS             */
 /*---------------------------*/	
@@ -525,6 +586,16 @@ span.swirl_left_small{
 span.swirl_right_small{
     display:inline-block;
     background:url(../images/swirl_right_small.png) no-repeat right;
+    padding:0 100px 0 0px;
+}
+span.swirl_left_small_gold{
+    display:inline-block;
+    background:url(../images/swirl_left_small_gold.png) no-repeat left;
+    padding:0 0 0 100px;
+}
+span.swirl_right_small_gold{
+    display:inline-block;
+    background:url(../images/swirl_right_small_gold.png) no-repeat right;
     padding:0 100px 0 0px;
 }
 .countdown_descr {
@@ -1253,10 +1324,25 @@ label#loader {
     display:inline-block;
     margin:20px 0 0 0;
     font-weight:800;
+    color:#ffffff;
+    border:1px #fff solid !important;
 }
 .contact_email a:hover{
-    color:#FFFFFF;
-    border:1px #fff solid;
+    color:#5d594d;
+    border:1px #5d594d solid !important;
+}
+
+a.show_reception_btn{
+    padding:20px 30px;
+    display:inline-block;
+    margin:20px 0 0 0;
+    font-weight:800;
+    color:#5d594d;
+    border:1px #5d594d solid !important;
+}
+a.show_reception_btn:hover{
+    color:#b5af47;
+    border:1px #b5af47 solid !important;
 }
 
 /*===============================================*/

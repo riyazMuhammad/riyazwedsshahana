@@ -4,15 +4,16 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="author" content="Muhammad Riyaz">
-        <meta name="description" content="Muhammad Riyaz Weds Shahana P.P">
-        <meta name="keywords" content="riyaz weds shahana, Muhammad Riyaz Weds Shahana, Muhammad Riyaz Weds Shahana P.P">
+        <meta name="description" content="A Website to avoid people getting lost during our marrige.">
         <title>Riyaz Weds Shahana</title>
         <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
         <link rel="stylesheet" type="text/css" media="all" href="css/green.css">
         <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link href="http://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/png" href="images/fav_icon.png">
+
     </head>
     <body data-feedly-mini="yes">
         <div id="main_container">
@@ -22,10 +23,9 @@
 
             <nav class="menu">                                                                   
                 <ul id="main_menu">
-                    <li><a class="selected" href="index.html">HOME</a></li>
-                    <li><a href="#">NIKAH</a></li>
-                    <li><a href="#">VALIMA</a></li>
-                    <li><a href="#">GET IN TOUCH</a></li>
+                    <li><a onclick="jQuery('html, body').animate({scrollTop: 0}, 'slow');" href="javascript:void(0);">HOME</a></li>
+                    <li><a href="#" class="show_wedding">WEDDING</a></li>
+                    <li><a href="#" class="show_reception">RECEPTION</a></li>
                 </ul>
             </nav>
 
@@ -55,7 +55,7 @@
                         <div class="about_pic_container">
                             <span class="about_picframe"></span>
                             <div class="about_social">
-                                <a href="https://www.facebook.com/shahanashareen"><img src="images/facebook.png" alt="" title=""></a>
+                                <a href="https://www.facebook.com/shahanashareen" target="_blank"><img src="images/facebook.png" alt="" title=""></a>
                             </div>
                             <div class="about_pic"><img src="images/bride-1.jpg" alt="" title=""></div>
                         </div>
@@ -70,8 +70,8 @@
                         <div class="about_pic_container">
                             <span class="about_picframe"></span>
                             <div class="about_social">
-                                <a href="https://twitter.com/riyazrmk4"><img src="images/twitter.png" alt="" title=""></a>
-                                <a href="https://www.facebook.com/muhammed.riyaz.31"><img src="images/facebook.png" alt="" title=""></a>
+                                <a href="https://twitter.com/riyazrmk4" target="_blank"><img src="images/twitter.png" alt="" title=""></a>
+                                <a href="https://www.facebook.com/muhammed.riyaz.31" target="_blank"><img src="images/facebook.png" alt="" title=""></a>
                             </div>
                             <div class="about_pic"><img src="images/groom-1.jpg" alt="" title=""></div>
                         </div>
@@ -82,32 +82,50 @@
 
                     <div class="clear"></div>
                 </div>  <!--end of full width-->
-            </div> <!--end of about content-->   
-
-
-
-            <div class="home_bottom">
-                <div class="full_width_centered">
-                    <div class="left13"> 
-                        <div class="bottom_icon"><img src="images/icon_location.png" alt="" title=""></div>
-                        <h2>NIKAH</h2>
-                        <span class="subtitle">BANGALORE - SHAFI MASJID(Tilaknagar) </span>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <strong>cillum dolore</strong> eu fugiat nulla pariat ur si nt oc caecat non proident, sunt in culpa <a href="#">qui officia</a> deserunt mollit anim id est laborum sed quia non numquam eius modi.</p>
+            </div> <!--end of about content-->  
+            <div class="wedding_container wedding_color">
+                <div class="slide1">
+                    <img src="images/location-3.png" alt="location pointer"/>
+                    <div class="header-content">
+                        <span class="swirl_left"><span class="swirl_right"><span class="header-text">WEDDING</span></span></span>
+                        <span class="address">BANGALORE - METRO CONVENTION HALL</span>
                     </div>
-                    <div class="left13">
-                        <div class="bottom_icon"><img src="images/icon_location.png" alt="" title=""></div>
-                        <h2>WEDDING HALL</h2>
-                        <span class="subtitle">BANGALORE - METRO CONVENTION HALL</span>
-                        <p>Nemo enim ipsam voluptatem <strong>quia voluptas</strong> sit aspernatur aut odit aut fugit, sed quia consequuntur <a href="#">magni</a> dolores eos qui ratione voluptatem sequi nesciunt. Neque quisquam est, qui dolorem ipsum</p>
+                    <div class="contact_email">
+                        <a href="#" id="show_wedding_map">Show me on the Map</a>
                     </div>
-                    <div class="left13_last">
-                        <div class="bottom_icon"><img src="images/icon_location.png" alt="" title=""></div>
-                        <h2>RECEPTION HALL</h2>
-                        <span class="subtitle">BANGALORE - HUDSON MEMORIAL HALL</span>
-                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit <a href="#">esse quam nihil</a> aspernatur aut odit aut fugit molestiae consequatur, vel illum <strong>qui dolorem</strong> eum fugiat quo voluptas nulla pariatur aspernatur.</p>
+                </div>
+                <div class="clear"></div>
+                <div class="slide2">
+                    <div class="header-content">
+                        <span class="swirl_left"><span class="swirl_right"><span class="header-text">WEDDING</span></span></span>
+                        <span class="address">BANGALORE - METRO CONVENTION HALL</span>
                     </div>
+                    <div class="map_content">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7777.2318950331655!2d77.5985097!3d12.9323876!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1524e4a03543%3A0x49464460ce7d2ecd!2sThe+Convention+Centres!5e0!3m2!1sen!2sin!4v1431463893503" width="80%" height="500px" frameborder="0" style="border:0"></iframe>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="clear"></div>
+            <div class="reception_container reception_color">
+                <div class="slide1">
+                    <img src="images/location-3.png" alt="location pointer"/>
+                    <div class="header-content">
+                        <span class="swirl_left_small_gold"><span class="swirl_right_small_gold"><span class="header-text">RECEPTION</span></span></span>
+                        <span class="address">BANGALORE - HUDSON MEMORIAL HALL</span>
+                    </div>
+                    <div class="contact_email">
+                        <a href="#" id="show_reception_map" class="show_reception_btn">Show me on the Map</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="slide2">
+                    <div class="header-content">
+                        <span class="swirl_left_small_gold"><span class="swirl_right_small_gold"><span class="header-text">RECEPTION</span></span></span>
+                        <span class="address">BANGALORE - HUDSON MEMORIAL HALL</span>
+                    </div>
+                    <div class="map_content">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1299096476755!2d77.58855100000001!3d12.96353799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15dee491b795%3A0xd2328de75bc720fb!2sHudson+Memorial+Hall!5e0!3m2!1sen!2sin!4v1431477201730" width="80%" height="500px" frameborder="0" style="border:0"></iframe>
+                    </div>
                 </div>
             </div>
 
@@ -115,23 +133,11 @@
                 <div class="full_width_centered">
                     <div class="footer_sign"><span class="swirl_left_transparent"><span class="swirl_right_transparent"><img src="images/birds_icon.png" alt="" title=""></span></span></div>
                     <div class="footer_names" style="display: block;"><span class="char1" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(0px) translateY(-36px) rotate(45deg); transform: translateX(0px) translateY(-36px) rotate(45deg);">R</span><span class="char2" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(-2px) translateY(-29px) rotate(40deg); transform: translateX(-2px) translateY(-29px) rotate(40deg);">I</span><span class="char3" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(-3px) translateY(-20px) rotate(33deg); transform: translateX(-3px) translateY(-20px) rotate(33deg);">Y</span><span class="char4" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(-4px) translateY(-12px) rotate(26deg); transform: translateX(-4px) translateY(-12px) rotate(26deg);">A</span><span class="char5" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(-3px) translateY(-8px) rotate(21deg); transform: translateX(-3px) translateY(-8px) rotate(21deg);">Z</span><span class="char8 empty" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(-1px) translateY(0px) rotate(4deg); transform: translateX(-1px) translateY(0px) rotate(4deg);">&nbsp;</span><span class="char9" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(0px) translateY(0px) rotate(-1deg); transform: translateX(0px) translateY(0px) rotate(-1deg);">&amp;</span><span class="char10 empty" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(1px) translateY(0px) rotate(-6deg); transform: translateX(1px) translateY(0px) rotate(-6deg);">&nbsp;</span><span class="char11" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(2px) translateY(-3px) rotate(-12deg); transform: translateX(2px) translateY(-3px) rotate(-12deg);">S</span><span class="char12" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(3px) translateY(-7px) rotate(-19deg); transform: translateX(3px) translateY(-7px) rotate(-19deg);">H</span><span class="char13" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(4px) translateY(-11px) rotate(-24deg); transform: translateX(4px) translateY(-11px) rotate(-24deg);">A</span><span class="char14" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(3px) translateY(-16px) rotate(-30deg); transform: translateX(3px) translateY(-16px) rotate(-30deg);">H</span><span class="char15" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(3px) translateY(-24px) rotate(-36deg); transform: translateX(3px) translateY(-24px) rotate(-36deg);">A</span><span class="char16" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(1px) translateY(-33px) rotate(-43deg); transform: translateX(1px) translateY(-33px) rotate(-43deg);">N</span><span class="char16" style="display: inline-block; -webkit-transition: none; transition: none; -webkit-transform: translateX(1px) translateY(-33px) rotate(-43deg); transform: translateX(1px) translateY(-33px) rotate(-43deg);">A</span></div>
-                    <!--                    <div class="footer_socials">
-                                            <ul>
-                                                <li><a href="#"><img src="images/twitter.png" alt="" title=""></a></li>
-                                                <li><a href="#"><img src="images/facebook.png" alt="" title=""></a></li>
-                                                <li><a href="#"><img src="images/pinterest.png" alt="" title=""></a></li>
-                                                <li><a href="#"><img src="images/vimeo.png" alt="" title=""></a></li>
-                                                <li><a href="#"><img src="images/google.png" alt="" title=""></a></li>
-                                                <li><a href="#"><img src="images/youtube.png" alt="" title=""></a></li>
-                                            </ul>
-                                        </div>-->
                     <nav class="footer_menu">
                         <ul>
-                            <li><a href="index.html" class="selected">HOME</a></li>
-                            <li><a href="page.html">NIKAH</a></li>
-                            <li><a href="rsvp.html">VALIMA</a></li>
-                            <li><a href="contact.html">GET IN TOUCH</a></li>
-                            <li><a onclick="jQuery('html, body').animate({scrollTop: 0}, 'slow');" href="javascript:void(0);" class="gotop" title="Go on top">TOP</a> </li>
+                            <li><a onclick="jQuery('html, body').animate({scrollTop: 0}, 'slow');" href="javascript:void(0);">HOME</a></li>
+                            <li><a href="#" class="show_wedding">WEDDING</a></li>
+                            <li><a href="#" class="show_reception">RECEPTION</a></li>
                         </ul>
                     </nav>
                     <div class="footer_copyright">Made with love by <a href="http://riyazm.com/">Muhammad Riyaz</a></div>
@@ -161,6 +167,34 @@
                                     $footernames.show().arctext({radius: 120, dir: -1});
 
                                     $('#defaultCountdown').countdown({until: new Date(2015, 5 - 1, 31, 11)});
+                                    $('#show_wedding_map').click(function () {
+                                        $('.wedding_container .slide1').addClass('animated zoomOutLeft');
+                                        $('.wedding_container .slide2').css("visibility", "visible");
+                                        $('.wedding_container .slide2').addClass('animated zoomInRight');
+                                        $('.wedding_container').css("height", "600px");
+                                        return false;
+                                    });
+                                    
+                                    $('#show_reception_map').click(function () {
+                                        $('.reception_container .slide1').addClass('animated zoomOutLeft');
+                                        $('.reception_container .slide2').css("visibility", "visible");
+                                        $('.reception_container .slide2').addClass('animated zoomInRight');
+                                        $('.reception_container').css("height", "600px");
+                                        return false;
+                                    });
+
+                                    $('.show_wedding').click(function () {
+                                        $('html, body').animate({
+                                            scrollTop: $('.wedding_container').offset().top
+                                        }, 'slow');
+                                        return false;
+                                    });
+                                    $('.show_reception').click(function () {
+                                        $('html, body').animate({
+                                            scrollTop: $('.reception_container').offset().top
+                                        }, 'slow');
+                                        return false;
+                                    });
 
                                 });
         </script>
