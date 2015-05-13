@@ -639,6 +639,7 @@ span.names_titles{
 }
 .about_pic_container{
     position:relative;
+    margin-bottom: 10px;
 }
 .about_pic{
     background-color:#000000;
